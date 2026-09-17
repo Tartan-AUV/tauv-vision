@@ -42,11 +42,11 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'cameraPublisher = tauv_vision.cameraPublisher:main',
-            'CameraInfoFixer = tauv_vision.CameraInfoFixer:main',
             'bannerTask = tauv_vision.bannerTask:main',
+            'bounds_localization = tauv_vision.bounds_localization:main',
+            'cloud_crop_box = tauv_vision.cloud_crop_box:main',
             'slalomTask = tauv_vision.slalomTask:main',
-            'tfStaticFromBag = tauv_vision.tfStaticFromBag:main'
+            'warp_publisher = tauv_vision.warp_publisher:main'
         ],
     },
 )

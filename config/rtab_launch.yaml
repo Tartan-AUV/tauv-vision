@@ -14,10 +14,15 @@ oak:
     rgb:
       r_set_man_focus: true
       r_focus: 130
-      i_fps: 3.0
+      i_fps: 10.0
       r_auto_exposure_limit: 2000
+      i_update_ros_base_time_on_ros_msg: true
+      i_low_bandwidth: true
+      i_low_bandwidth_profile: 4      # MJPEG (default)
+      i_low_bandwidth_quality: 50
+      i_publish_compressed: true
     stereo:
-      i_fps: 3.0
+      i_fps: 10.0
       i_aligned: true
       i_board_socket_id: 0
       i_depth_preset: "HIGH_DETAIL"
@@ -29,9 +34,14 @@ oak:
       i_enable_threshold_filter: true
       i_threshold_filter_min_range: 300
       i_threshold_filter_max_range: 6000
+      i_update_ros_base_time_on_ros_msg: true
     left:
       i_publish_topic: true
-      i_fps: 3.0
+      i_fps: 10.0
+      i_update_ros_base_time_on_ros_msg: true
     right:
       i_publish_topic: true
-      i_fps: 3.0
+      i_fps: 10.0
+      i_update_ros_base_time_on_ros_msg: true
+    imu:
+      i_update_ros_base_time_on_ros_msg: true
